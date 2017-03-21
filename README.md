@@ -20,4 +20,5 @@ change password too when u forget your password if u r login with general sign i
 or
 # 2. Bloated form which has PDF Reader having size 21 MB
 
-# Bloated apk Link https://goo.gl/Y2bTsE
+# Bloated apk Link(21 MB) https://goo.gl/Y2bTsE
+# Debloated apk Link(5 MB) https://goo.gl/GmkjiJ
