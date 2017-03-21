@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/activity_subjects"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="collegedoc.com.collegedoc.Topics">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/topictoolbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintHorizontal_bias="0.46"></android.support.v7.widget.Toolbar>
+
+<ListView
+    android:id="@+id/topicrv"
+    android:contextClickable="true"
+    android:textDirection="firstStrong"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:visibility="visible"
+    android:textAlignment="gravity"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/topictoolbar" />
+
+
+</RelativeLayout>
+

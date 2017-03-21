@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="collegedoc.com.collegedoc.Subjects">
+    <item
+        android:title="Choose file"
+        android:orderInCategory="1"
+        android:id="@+id/choose"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/invite"
+        android:orderInCategory="2"
+        android:title="Invite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/signout"
+        android:orderInCategory="4"
+        android:title="Signout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/changePassword"
+        android:orderInCategory="3"
+        android:title="Update Password"
+        app:showAsAction="never" />
+    <item android:id="@+id/upload"
+        android:icon="@drawable/ic_fiber_new"
+        android:title="Upload Subject"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:menuCategory="secondary"/>
+    <!--item android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"/-->
+
+</menu>
