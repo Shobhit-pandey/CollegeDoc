@@ -5,6 +5,7 @@ with
 # 2. Facebook
 # 3. Twitter
 # 4. General Sign In
+Authentication done by Firebase
 (You will receive verification email on your email and you can update your password too and you can 
 change password too when u forget your password if u r login with general sign in )
 
