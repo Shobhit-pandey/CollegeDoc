@@ -183,6 +183,8 @@ public class Topics extends AppCompatActivity {
         setTitle(u);
         Toolbar topictoolbar = (Toolbar) findViewById(R.id.topictoolbar);
         topicrv = (ListView) findViewById(R.id.topicrv);
+        progressDialog = new ProgressDialog(this);
+        pDialog = new ProgressDialog(this);
         setSupportActionBar(topictoolbar);
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl
                 ("https://college-doc.firebaseio.com/" + u);
@@ -251,6 +253,7 @@ public class Topics extends AppCompatActivity {
                             //temp.setText(uric.toString());
                             Uri ur = Uri.parse(uric.toString());
                             file_url = uric.toString();
+                            pDialog.setMessage("Downloading " + sub + ".pdf");
                             new DownloadFileFromURL().execute(file_url);
                             // startActivity(new Intent(PdfSelector.this,Topics.class));
             /*Intent webIntent = new Intent(Intent.ACTION_VIEW, ur);
@@ -371,6 +374,7 @@ public class Topics extends AppCompatActivity {
         if (resultCode == RESULT_OK) {
             if (requestCode == SELECT_PDF) {
 
+                progressDialog.setMessage("Uploading " + new_topic + ".pdf");
                 Uri selectedUri_PDF = data.getData();
                 //InputStream inputstream;
                 showDialog(progress_bar_type);
@@ -409,6 +413,7 @@ public class Topics extends AppCompatActivity {
                         // Handle successful uploads on complete
                         //Uri downloadUrl = taskSnapshot.getMetadata().getDownloadUrl();
                         dismissDialog(progress_bar_type);
+                        progressDialog.setProgress(0);
                         Toast.makeText(Topics.this, new_topic+".pdf is uploaded", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -420,7 +425,6 @@ public class Topics extends AppCompatActivity {
         //pDialog.show();
         switch (id) {
             case progress_bar_type:
-                progressDialog = new ProgressDialog(this);
                 progressDialog.setMessage("Uploading " + new_topic + ".pdf");
                 progressDialog.setIndeterminate(false);
                 progressDialog.setMax(100);
@@ -442,7 +446,6 @@ public class Topics extends AppCompatActivity {
                 return progressDialog;
 
             case progress_bar_type1:
-                pDialog = new ProgressDialog(this);
                 pDialog.setMessage("Downloading " + sub + ".pdf");
                 pDialog.setIndeterminate(false);
                 pDialog.setMax(100);
