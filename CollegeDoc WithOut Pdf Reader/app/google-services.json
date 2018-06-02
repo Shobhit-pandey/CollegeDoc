@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "351497014009",
+    "firebase_url": "https://chatsp-41ad9.firebaseio.com",
+    "project_id": "chatsp-41ad9",
+    "storage_bucket": "chatsp-41ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351497014009:android:12c0ea71c1918fab",
+        "android_client_info": {
+          "package_name": "com.example.shobhit.chatsp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351497014009-558hm8hhdmkomc13g3s1ovndvjjgic25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNNcqmy8m95BcIityGEaWgne8zmI-5F1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
