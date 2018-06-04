@@ -21,7 +21,7 @@ Two version of app-
 or
 # 2. Bloated form which has PDF Reader having size 21 MB
 
-Bloated apk Link(21 MB) https://goo.gl/Y2bTsE
+Bloated apk Link(21 MB) https://goo.gl/qiH45K
 Debloated apk Link(5 MB) https://goo.gl/GmkjiJ
 # Developed By-
   Shobhit Pandey <Shobhitpandey8@gmail.com>
